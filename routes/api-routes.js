@@ -31,7 +31,7 @@ module.exports = function (app) {
     });
 
     app.post("/api/workouts", ({ body }, res) => {
-        Workout.insertMany(body)
+        Workout.create(body)
             .then(dbWorkout => {
                 res.json(dbWorkout);
             })
