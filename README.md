@@ -19,6 +19,7 @@ A web application that allows users to view, create and track daily workouts. Th
 -   [Questions](#questions)
 -   [License](#license)
 -   [Credits](#credits)
+-   [Images](#images)
 
 ## Installation
 
