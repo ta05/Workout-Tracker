@@ -34,9 +34,13 @@ const workoutSchema = new Schema({
             type: Number,
             required: "Enter the duration of the exercise"
         }
-    }]
+    }],
+    totalDuration: {
+        type: Number,
+        default: 0
+    }
 });
 
-const Workout = mongoose.model("Workout", workoutSchema);
+const Workout = mongoose.model("workout", workoutSchema);
 
 module.exports = Workout;

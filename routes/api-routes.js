@@ -4,6 +4,13 @@ module.exports = function (app) {
     app.get("/api/workouts", (req, res) => {
         Workout.find({})
             .then(dbWorkout => {
+                dbWorkout.forEach((workout) => {
+                    let totalDuration = 0;
+                    workout.exercises.forEach((exercise) => {
+                        totalDuration += exercise.duration;
+                    });
+                    workout.totalDuration = totalDuration;
+                })
                 res.json(dbWorkout);
             });
     });
@@ -11,7 +18,10 @@ module.exports = function (app) {
     app.put("/api/workouts/:id", ({ body, params }, res) => {
         Workout.findByIdAndUpdate(
             params.id,
-            { $push: { exercises: body } },
+            {   
+                $inc: {totalDuration: body.duration },
+                $push: { exercises: body }
+            },
             { new: true, runValidators: true }
         )
             .then(dbWorkout => res.json(dbWorkout))
