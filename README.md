@@ -53,7 +53,7 @@ Brandon Gatlin for his video on using AtlasDB as a database server. And AtlasDB 
 
 ## Images
 
-![Exercise](public\images\screencapture-fitness-tracker-tolu-herokuapp-com-1597342326762.png)
+![Exercise](/public/images/screencapture-fitness-tracker-tolu-herokuapp-com-1597342326762.png)
 
-![Dashboard](public\images\screencapture-fitness-tracker-tolu-herokuapp-com-stats-1597342408591.png)
+![Dashboard](/public/images/screencapture-fitness-tracker-tolu-herokuapp-com-stats-1597342408591.png)
 
