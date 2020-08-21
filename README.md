@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-None-green.svg)](https://shields.io/)
 
--   https://fitness-tracker-tolu.herokuapp.com/
+https://fitness-tracker-tolu.herokuapp.com/
 
 ## Description
 
